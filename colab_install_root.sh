@@ -1,7 +1,9 @@
 #/bin/sh
 mkdir -p $HOME/APPS
-cd APPS && wget -q https://root.cern.ch/download/root_v6.13.08.Linux-ubuntu18-x86_64-gcc7.3.tar.gz 
-cd APPS && tar -xf root_v6.13.08.Linux-ubuntu18-x86_64-gcc7.3.tar.gz
+cd $HOME/APPS 
+wget -q https://root.cern.ch/download/root_v6.13.08.Linux-ubuntu18-x86_64-gcc7.3.tar.gz 
+cd $HOME/APPS
+tar -xf root_v6.13.08.Linux-ubuntu18-x86_64-gcc7.3.tar.gz
 pip install root-numpy
 apt-get install libdavix0v5
 echo "Davix.GSI.CACheck: n" >> $ROOTSYS/etc/system.rootrc
