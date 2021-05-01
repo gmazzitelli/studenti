@@ -8,6 +8,7 @@
 # latest credit to https://gist.github.com/MohamedElashri/ (https://gist.github.com/MohamedElashri/dab00a84ba6a65f99fb2694504ecc39e)
 mkdir -p APPS
 pwd
+wget https://raw.githubusercontent.com/gmazzitelli/studenti/master/rootenv.py
 cd APPS && wget https://root.cern.ch/download/root_v6.13.08.Linux-ubuntu18-x86_64-gcc7.3.tar.gz 
 cd APPS && tar -xf root_v6.13.08.Linux-ubuntu18-x86_64-gcc7.3.tar.gz
 
@@ -17,4 +18,4 @@ wget https://raw.githubusercontent.com/gmazzitelli/cygno_cloud/main/cygnus_lib.p
 wget https://raw.githubusercontent.com/gmazzitelli/cygno/master/mylib.py
 madir out
 mkdir ped
-wget https://raw.githubusercontent.com/gmazzitelli/studenti/master/rootenv.py
+
