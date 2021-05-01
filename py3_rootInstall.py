@@ -14,10 +14,15 @@ def aptget(file):
     return os.system(command)
 
 # vai
+print('scarica root')
 wget('https://github.com/MohamedElashri/HEP-ML/releases/download/ROOT/ROOT.tar.zip')
+print('unzip root')
 unzip('/content/ROOT.tar.zip')
+print('untar root')
 tar('ROOT.tar')
+print('istalla pacchetti')
 aptget('git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev tar gfortran subversion')
+print('root-numpy')
 importlib.import_module('root-numpy')
 import sys
 sys.path.append("/content/root_build/")
