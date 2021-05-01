@@ -7,4 +7,6 @@ wget https://raw.githubusercontent.com/gmazzitelli/cygno_cloud/main/cygnus_lib.p
 wget https://raw.githubusercontent.com/gmazzitelli/cygno/master/mylib.py
 madir out
 mkdir ped
+wget https://raw.githubusercontent.com/gmazzitelli/studenti/master/rootenv.py
+%run rootenv.py
 pip install root-numpy
