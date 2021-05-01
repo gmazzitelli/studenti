@@ -1,9 +1,24 @@
-!wget https://github.com/MohamedElashri/HEP-ML/releases/download/ROOT/ROOT.tar.zip
-!unzip /content/ROOT.tar.zip
-!tar -xf  ROOT.tar
-!apt-get install git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev tar gfortran subversion
-!install root_numpy # optional if you want to convert Trees to numpy arrays and other things like that
- 
+import os
+import importlib
+def wget(url):
+    command = 'wget ' + url
+    return os.system(command)
+def unzip(file):
+    command = 'unzip ' + file
+    return os.system(command)
+def tar(file):
+    command = 'tar -xf ' + file
+    return os.system(command)
+def apt-get(file):
+    command = 'apt-get install ' + file
+    return os.system(command)
+
+
+wget('https://github.com/MohamedElashri/HEP-ML/releases/download/ROOT/ROOT.tar.zip)'
+unzip('/content/ROOT.tar.zip')
+tar('ROOT.tar')
+apt-get('git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev tar gfortran subversion')
+importlib.import_module('root-numpy')
 import sys
 sys.path.append("/content/root_build/")
 sys.path.append("/content/root_build/bin/")
