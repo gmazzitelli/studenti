@@ -9,7 +9,7 @@ def unzip(file):
 def tar(file):
     command = 'tar -xf ' + file
     return os.system(command)
-def apt-get(file):
+def aptget(file):
     command = 'apt-get install ' + file
     return os.system(command)
 
@@ -17,7 +17,7 @@ def apt-get(file):
 wget('https://github.com/MohamedElashri/HEP-ML/releases/download/ROOT/ROOT.tar.zip)'
 unzip('/content/ROOT.tar.zip')
 tar('ROOT.tar')
-apt-get('git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev tar gfortran subversion')
+aptget('git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev tar gfortran subversion')
 importlib.import_module('root-numpy')
 import sys
 sys.path.append("/content/root_build/")
