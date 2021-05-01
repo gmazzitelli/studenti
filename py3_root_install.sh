@@ -18,4 +18,3 @@ wget https://raw.githubusercontent.com/gmazzitelli/cygno/master/mylib.py
 madir out
 mkdir ped
 wget https://raw.githubusercontent.com/gmazzitelli/studenti/master/rootenv.py
-
