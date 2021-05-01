@@ -14,7 +14,7 @@ def aptget(file):
     return os.system(command)
 
 # vai
-wget('https://github.com/MohamedElashri/HEP-ML/releases/download/ROOT/ROOT.tar.zip)'
+wget('https://github.com/MohamedElashri/HEP-ML/releases/download/ROOT/ROOT.tar.zip')
 unzip('/content/ROOT.tar.zip')
 tar('ROOT.tar')
 aptget('git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev tar gfortran subversion')
