@@ -16,6 +16,7 @@ install root_numpy # optional if you want to convert Trees to numpy arrays and o
 # more 
 wget https://raw.githubusercontent.com/gmazzitelli/cygno_cloud/main/cygnus_lib.py
 wget https://raw.githubusercontent.com/gmazzitelli/cygno/master/mylib.py
+wget https://raw.githubusercontent.com/gmazzitelli/studenti/master/rootenv.py
 madir out
 mkdir ped
 
