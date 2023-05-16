@@ -12,4 +12,7 @@ CYGNO old format H5
 
 
 -----
+cd /data01/data/
+gzip runXXXXX.mid
 cygno_repo put cygno-data runXXXXX.mid.gz  -t LNF -s infncloud-wlcg
+https://minio.cloud.infn.it/minio/login
