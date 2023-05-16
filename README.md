@@ -9,3 +9,7 @@
 # read_example.ipynb
 CYGNO old format H5
 - Read H% files from the CYGNO CLOUD
+
+
+-----
+cygno_repo put cygno-data runXXXXX.mid.gz  -t LNF -s infncloud-wlcg
