@@ -16,3 +16,5 @@ CYGNO old format H5
 - gzip runXXXXX.mid
 - cygno_repo put cygno-data runXXXXX.mid.gz  -t LNF -s infncloud-wlcg
 - https://minio.cloud.infn.it/minio/login
+- https://notebook02.cygno.cloud.infn.it:8888/
+-  ls /jupyter-workspace/cloud-storage/cygno-data/LNF (files in cygno storage)
